@@ -5,22 +5,15 @@ image 'bryandollery/alpine-docker'
 }
 }
 stages{
-stage('build'){
+stage('manifest'){
 steps{
 sh """
 cat << EOF > ./manifest.txt 
-who build this ? 
-${BUILD_ID}
-what is the build number ?
-${BUILD_NUMBER}
-
-what about the URL ?
-${BUILD_URL}
-
+who build this : ${BUILD_ID}
+what is the build number : ${BUILD_NUMBER}
+what about the URL: ${BUILD_URL}
 that's all GOOOOO, I'll carry on
-wait, I need you commit number 
-
-${GIT_COMMIT}
+wait, I need you commit number : ${GIT_COMMIT}
 EOF
 """
 
