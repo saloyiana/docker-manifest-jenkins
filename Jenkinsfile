@@ -7,15 +7,12 @@ image 'bryandollery/alpine-docker'
 stages{
 stage('manifest'){
 steps{
-sh '''
-cat <<EOF > ./manifest.txt
-name: ${JOB_NAME}
-time: ${currentBuild.startTimeInMillis}
-build #: ${BUILD_NUMBER}
-commit: ${GIT_COMMIT}
-url: ${GIT_URL}
-EOF
-'''
+sh "name: ${JOB_NAME}"
+sh "time: ${currentBuild.startTimeInMillis}"
+sh " ${BUILD_NUMBER}"
+sh "commit: ${GIT_COMMIT}"
+sh "url: ${GIT_URL}"
+
 }
 }
 
