@@ -1,7 +1,7 @@
 pipeline {
 agent {
 docker { 
-image 'docker-in-jenkins:latest'
+image 'bryandollery/alpine-docker'
 }
 }
 stages{
