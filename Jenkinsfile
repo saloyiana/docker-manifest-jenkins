@@ -8,7 +8,7 @@ stages{
 stage('manifest'){
 steps{
 sh "echo 'name' ${JOB_NAME} > manifest.txt"
-sh "echo'time:' ${currentBuild.startTimeInMillis}"
+sh "echo 'time:' ${currentBuild.startTimeInMillis}"
 sh " ${BUILD_NUMBER}"
 sh "echo 'commit:' ${GIT_COMMIT}"
 sh "echo 'url:' ${GIT_URL}"
