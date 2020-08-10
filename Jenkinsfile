@@ -11,8 +11,6 @@ sh """
 cat << EOF > ./manifest.txt 
 who build this ? 
 ${BUILD_ID}
-when ?
-${BUILD_TIMESTAMP}
 what is the build number ?
 ${BUILD_NUMBER}
 
