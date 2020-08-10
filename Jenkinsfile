@@ -8,13 +8,13 @@ stages{
 stage('manifest'){
 steps{
 sh """
-cat << EOF > ./manifest.txt 
+cat << E0F > ./manifest.txt 
 who build this : ${BUILD_ID}
 what is the build number : ${BUILD_NUMBER}
 what about the URL: ${BUILD_URL}
 that's all GOOOOO, I'll carry on
 wait, I need you commit number : ${GIT_COMMIT}
-EOF
+E0F
 """
 
 }
