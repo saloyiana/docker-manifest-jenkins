@@ -18,4 +18,11 @@ EOF
 """
 }
 }
+
+stage('build'){
+steps{
+
+sh 'docker build --tag manifest-holder:latest .'
+}
+}
 }}
