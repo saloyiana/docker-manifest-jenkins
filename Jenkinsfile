@@ -7,7 +7,7 @@ image 'bryandollery/alpine-docker'
 stages{
 stage('manifest'){
 steps{
-sh "name: ${JOB_NAME}"
+sh "echo 'name' ${JOB_NAME} > manifest.txt"
 sh "time: ${currentBuild.startTimeInMillis}"
 sh " ${BUILD_NUMBER}"
 sh "commit: ${GIT_COMMIT}"
