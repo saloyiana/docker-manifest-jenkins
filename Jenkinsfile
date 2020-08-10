@@ -1,6 +1,9 @@
-pipeline{
+pipeline {
 agent {
-docker { image 'docker-in-jenkins:latest'}
+docker { 
+image 'docker-in-jenkins:latest'
+}
+}
 stages{
 stage('build'){
 steps{
