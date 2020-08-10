@@ -1,4 +1,4 @@
 from alpine
-copy /manifest.txt
+copy . /manifest.txt
 run cat /manifest.txt
 entrypoint ["/bin/bash", "-c", "cat", "./manifest"]

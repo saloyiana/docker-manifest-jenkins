@@ -22,7 +22,7 @@ EOF
 stage('build'){
 steps{
 
-sh 'docker build --tag manifest-holder:latest .'
+sh 'docker build --tag manifest-holder-sa:latest .'
 }
 }
 }}
