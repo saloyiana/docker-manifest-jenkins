@@ -17,6 +17,6 @@ sh 'cat manifest.txt'
 }}
 stage('build'){
 steps{
-sh 'docker build --tag manifest-holder-sa:latest .'
-}}
+sh 'docker build --tag manifest-holder-sa:latest .'}
+}
 } }
