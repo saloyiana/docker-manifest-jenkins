@@ -14,7 +14,6 @@ sh "echo 'what about the URL?' ${GIT_URL} >> manifest.txt"
 sh "echo 'wait, I need you commit number' ${GIT_COMMIT} >> manifest.txt"
 sh "echo 'here is your manifest' "
 sh 'cat manifest.txt'
-
 }
 }
 stage('build'){
