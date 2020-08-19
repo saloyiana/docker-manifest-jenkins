@@ -1,1 +1,1 @@
-hello 
+Create a manifest file for Jenkins 
