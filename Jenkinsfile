@@ -23,10 +23,5 @@ steps{
 sh 'docker build --tag manifest-holder-sa:latest .'
 }
 }
-stage('test'){
-steps{
-sh 'docker run --rm manifest-holder-sa:latest' }
 }
 }
-}
-
