@@ -19,4 +19,4 @@ stage('build'){
 steps{
 sh 'docker build --tag manifest-holder-sa:latest .'
 }}
-}}
+} }
